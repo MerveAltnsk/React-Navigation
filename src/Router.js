@@ -8,7 +8,7 @@ import Second from './Pages/Second';
 
 const Stack = createStackNavigator();
 
-functionApp(){
+function App() {
   return(
     <NavigationContainer>
       <Stack.Navigator>

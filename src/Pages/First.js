@@ -1,10 +1,17 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Button} from 'react-native';
 
-function First() {
+function First(props) {
+
+    function navigateToPage() {
+        props.navigation.navigate('SecondScreen');
+    }
+
+
   return (
     <View>
       <Text>Hello First</Text>
+      <Button title = "Go to second" onPress={navigateToPage}/>
     </View>
   );
 }

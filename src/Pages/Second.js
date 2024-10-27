@@ -1,10 +1,16 @@
 import React from "react";
-import { View,Text } from "react-native";
+import { View,Text,Button } from "react-native";
 
-function Second() {
+function Second(props) {
+
+    function backToFirst() {
+        props.navigation.goBack();
+    }
+
     return (
         <View>
             <Text>Hello Second</Text>
+            <Button title="Go Back" onPress={backToFirst} />
         </View>
     );
 }
