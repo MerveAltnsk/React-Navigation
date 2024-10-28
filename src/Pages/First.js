@@ -4,7 +4,7 @@ import {View, Text, Button} from 'react-native';
 function First(props) {
 
     function navigateToPage() {
-        props.navigation.navigate('SecondScreen');
+        props.navigation.navigate('SecondScreen',{username:'Merve'});
     }
 
 
